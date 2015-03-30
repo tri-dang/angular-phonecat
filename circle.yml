@@ -1,0 +1,7 @@
+test:
+  override:
+    - npm start:
+        background: true
+    - sleep 5
+    - npm run test-single-run
+    - npm run protractor
